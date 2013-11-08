@@ -1,5 +1,8 @@
 ---
-layout: page
+layout: page
+title: Categories
+header: Posts
+group: navigation 
 ---
 {% include JB/setup %}
 
