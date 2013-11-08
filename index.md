@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Lloyd Zhou
+#title: Lloyd Zhou
 tagline: My Page on GITHUB!
 ---
 {% include JB/setup %}
