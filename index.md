@@ -1,8 +1,7 @@
 ---
 layout: page
 title: Categories
-header: Posts
-group: navigation 
+header: Posts
 ---
 {% include JB/setup %}
 
