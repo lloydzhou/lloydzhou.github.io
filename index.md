@@ -11,6 +11,10 @@ This is my own personal page on the github.com.
 
 ## Projects 
 * [mapped.io](https://github.com/lloydzhou/mapred.io.git )
+> A mapreduce framework based on socket.io write in node's. 
+> using a nodejs server to control the maper and reducer. 
+> using the browser to run tasks 
+> every node communication with the controller by using socket.io, (Html5 browser just using Web Socket. 
 * [editjson](https://github.com/lloydzhou/edition.git ) 
 
 ## Posts list
