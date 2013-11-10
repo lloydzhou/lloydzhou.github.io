@@ -12,11 +12,14 @@ This is my own personal page on the github.com.
 ## Projects 
 * [mapped.io](https://github.com/lloydzhou/mapred.io.git )
 > A mapreduce framework based on socket.io write in node's. 
-> using a nodejs server to control the maper and reducer. 
-> using the browser to run tasks 
-> every node communication with the controller by using socket.io, (Html5 browser just using Web Socket). 
+> Using a nodejs server to control the maper and reducer. 
+> Using the browser to run tasks 
+> Every node communication with the controller by using socket.io, (Html5 browser just using Web Socket). 
 * [editjson](https://github.com/lloydzhou/editjson.git ) 
-
+> A jQuery plugin to edit json data.
+> using "ul" "li" to view the json data as a tree.
+> there's 3 buttons to "add after", "insert" and "delete" the node.
+> register "dbclick" event to edit the key and value (if the content is so long, using textarea instead of input to edit it). 
 ## Posts list
 
 <ul class="posts">
