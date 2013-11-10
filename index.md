@@ -5,7 +5,15 @@ header: Posts
 ---
 {% include JB/setup %}
 
-#Posts list
+# Overview  
+
+This is my own personal page on the github.com. 
+
+## Projects 
+* [mapped.io](https://github.com/lloydzhou/mapred.io.git )
+* [editjson](https://github.com/lloydzhou/edition.git ) 
+
+## Posts list
 
 <ul class="posts">
   {% for post in site.posts %}
