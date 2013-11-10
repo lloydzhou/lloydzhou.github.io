@@ -15,7 +15,7 @@ This is my own personal page on the github.com.
 > using a nodejs server to control the maper and reducer. 
 > using the browser to run tasks 
 > every node communication with the controller by using socket.io, (Html5 browser just using Web Socket. 
-* [editjson](https://github.com/lloydzhou/edition.git ) 
+* [editjson](https://github.com/lloydzhou/editjson.git ) 
 
 ## Posts list
 
