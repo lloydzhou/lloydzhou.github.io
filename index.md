@@ -24,7 +24,7 @@ This is my own personal page on the github.com.
 > forked this project from other git user, using restful request. 
 > add one plugin to filter records. just extended from the creation form and editing form. 
 * [YII extension] (https://github.com/lloydzhou/yii.extension.git) 
-+ using YII framework to wrap the jtable, can using this extension to edit the Active Record on admin panel. can edit the relation AR (HAS_MANY) by open a children table. 
+> using YII framework to wrap the jtable, can using this extension to edit the Active Record on admin panel. can edit the relation AR (HAS_MANY) by open a children table. 
 
 ## Posts list
 
