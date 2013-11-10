@@ -1,21 +1,11 @@
 ---
-layout: page
-title: Categories
-header: Posts
+layout: page
+title: 木木的主页
+header: Posts
 ---
 {% include JB/setup %}
 
-
-
-
-## Sample Posts
-
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
-
-    $ rm -rf _posts/core-samples
-
-Here's a sample "posts list".
+#Posts list
 
 <ul class="posts">
   {% for post in site.posts %}
