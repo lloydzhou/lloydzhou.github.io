@@ -7,11 +7,11 @@ tags : [php, tal, template, template attribute language, xml parse, tinymvc]
 {% include JB/setup %}
 
 # [TAL](http://en.wikipedia.org/wiki/Template_Attribute_Language)
-> template attribute language discription from "wikipedia" 
-> The Template Attribute Language (TAL) is a templating language used to generate dynamic HTML and XML pages. 
-> Its main goal is to simplify the collaboration between programmers and designers. 
-> This is achieved by embedding TAL statements inside valid HTML (or XML) tags which can then be worked on using common design tools.
-> TAL was created for Zope but is used in other Python-based projects as well.
+> template attribute language discription from "wikipedia".  
+> The Template Attribute Language (TAL) is a templating language used to generate dynamic HTML and XML pages.  
+> Its main goal is to simplify the collaboration between programmers and designers.  
+> This is achieved by embedding TAL statements inside valid HTML (or XML) tags which can then be worked on using common design tools.  
+> TAL was created for Zope but is used in other Python-based projects as well.  
 
 ## My implement in php [Microtpl](http://lloydzhou.github.io/microtpl/)
 > MicroTpl is small templating system for PHP.
