@@ -15,6 +15,9 @@ This is my own personal page on the github.com.
 > Using a nodejs server to control the maper and reducer. 
 > Using the browser to run tasks 
 > Every node communication with the controller by using socket.io, (Html5 browser just using Web Socket). 
+> Update the mapred.io-client.js file, can using in browser and server, so we can add node as a standalone application in server not just using browser.  
+* [microtpl](https://lloydzhou.github.io/microtpl/) 
+> Small template attribute language implemention for PHP (using xml_parse)
 * [editjson](https://lloydzhou.github.io/editjson/) 
 > A jQuery plugin to edit json data.
 > using "ul" "li" to view the json data as a tree.
