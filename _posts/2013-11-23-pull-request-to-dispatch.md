@@ -23,7 +23,7 @@ tags : [php, dispatch, tinymvc]
 > but we always want it to get the request_body when using other request type.
 > so i merge the request_body into function "params". 
 
-* noodlehaus have merge the two point into code tree [pull #24]{https://github.com/noodlehaus/dispatch/pull/24)
+* noodlehaus have merge the two point into code tree [pull #24](https://github.com/noodlehaus/dispatch/pull/24)
 
 ## found issue 
 > when i merge the "request_body" into "params". 
