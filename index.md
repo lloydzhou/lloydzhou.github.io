@@ -18,6 +18,11 @@ This is my own personal page on the github.com.
 > Update the mapred.io-client.js file, can using in browser and server, so we can add node as a standalone application in server not just using browser.  
 * [microtpl](https://lloydzhou.github.io/microtpl/) 
 > Small template attribute language implemention for PHP (using xml_parse)
+* [ActiveRecord](http://lloydzhou.github.io/activerecord/)
+> Simple activerecord in PHP.  
+> Easy to using(can using chain calls).  
+> Support three relations (HAS_ONE, HAS_MANY, BELONGS_TO).   
+> Only one file(398 lines with comments).   
 * [editjson](https://lloydzhou.github.io/editjson/) 
 > A jQuery plugin to edit json data.
 > using "ul" "li" to view the json data as a tree.
