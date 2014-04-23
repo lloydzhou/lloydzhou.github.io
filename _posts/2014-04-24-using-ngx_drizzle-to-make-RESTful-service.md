@@ -14,22 +14,7 @@ tags : [openresty, mysql, ngx_drizzle, openshift]
 > just make a nginx config file.
 > in this config file, will using some env var. so using sed to replace it before deploy the app.
 
-```
-    sed -e "s,`echo '$OPENSHIFT_REPO_DIR'`,`echo $OPENSHIFT_REPO_DIR`," \
-        -e "s,`echo '$OPENSHIFT_DIY_IP'`,`echo $OPENSHIFT_DIY_IP`," \
-        -e "s,`echo '$OPENSHIFT_DIY_PORT'`,`echo $OPENSHIFT_DIY_PORT`," \
-        -e "s,`echo '$OPENSHIFT_MYSQL_DB_PORT'`,`echo $OPENSHIFT_MYSQL_DB_PORT`," \
-        -e "s,`echo '$OPENSHIFT_MYSQL_DB_HOST'`,`echo $OPENSHIFT_MYSQL_DB_HOST`," \
-        -e "s,`echo '$OPENSHIFT_MYSQL_DB_PASSWORD'`,`echo $OPENSHIFT_MYSQL_DB_PASSWORD`," \
-        -e "s,`echo '$OPENSHIFT_MYSQL_DB_USERNAME'`,`echo $OPENSHIFT_MYSQL_DB_USERNAME`," \
-        -e "s,`echo '$OPENSHIFT_REDIS_HOST'`,`echo $OPENSHIFT_REDIS_HOST`," \
-        -e "s,`echo '$OPENSHIFT_REDIS_PORT'`,`echo $OPENSHIFT_REDIS_PORT`," \
-        -e "s,`echo '$REDIS_PASSWORD'`,`echo $REDIS_PASSWORD`," \
-        -e "s,`echo '$OPENSHIFT_MEMCACHED_PORT'`,`echo $OPENSHIFT_MEMCACHED_PORT`," \
-        -e "s,`echo '$OPENSHIFT_MEMCACHED_HOST'`,`echo $OPENSHIFT_MEMCACHED_HOST`," \
-        $OPENSHIFT_REPO_DIR/.openshift/action_hooks/nginx.conf.template \
-        > $OPENSHIFT_DATA_DIR/nginx/conf/nginx.conf
-```
+
 
 > build every api by define location, output to JSON format.
 ```
