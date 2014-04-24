@@ -14,7 +14,7 @@ tags : [openresty, mysql, ngx_drizzle, openshift]
 > just make a nginx config file.
 > in this config file, will using some env var. so using sed to replace it before deploy the app.  
 
-```nginx
+```bash
     sed -e "s,`echo '$OPENSHIFT_REPO_DIR'`,`echo $OPENSHIFT_REPO_DIR`," \  
         -e "s,`echo '$OPENSHIFT_DIY_IP'`,`echo $OPENSHIFT_DIY_IP`," \  
         -e "s,`echo '$OPENSHIFT_DIY_PORT'`,`echo $OPENSHIFT_DIY_PORT`," \  
@@ -33,12 +33,12 @@ tags : [openresty, mysql, ngx_drizzle, openshift]
 
 > build every api by define location, output to JSON format.  
 
-```nginx
+
+```bash
     location ~ '/api/lookup/([a-z0-9_]+)' {  
         set_quote_sql_str $type $1;  
         drizzle_query 'select * from `lookup` where `type`=$type';  
 
-        # the belong is always same, can move it into another template file, and include it.  
         add_header Access-Control-Allow-Origin '*';  
         add_header Access-Control-Allow-Methods 'PUT, POST, GET, OPTIONS';  
         add_header Access-Control-Allow-Headers 'X-Requested-With';  
