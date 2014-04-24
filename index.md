@@ -37,12 +37,12 @@ This is my own personal page on the github.com.
 > there's 3 buttons to "add after", "insert" and "delete" the node.
 > register "dbclick" event to edit the key and value (if the content is so long, using textarea instead of input to edit it). 
 
-### [jtable] (https://github.com/lloydzhou/jtable.git)   
+### [jtable](https://github.com/lloydzhou/jtable.git)   
 
 > forked this project from other git user, using restful request. 
 > add one plugin to filter records. just extended from the creation form and editing form. 
 
-### [YII extension] (https://github.com/lloydzhou/yii.extension.git)   
+### [YII extension](https://github.com/lloydzhou/yii.extension.git)   
 
 > using YII framework to wrap the jtable, can using this extension to edit the Active Record on admin panel. can edit the relation AR (HAS_MANY) by open a children table. 
 
