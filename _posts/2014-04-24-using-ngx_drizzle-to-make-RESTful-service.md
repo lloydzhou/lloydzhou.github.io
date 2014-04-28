@@ -32,7 +32,7 @@ tags : [openresty, mysql, ngx_drizzle, openshift]
 </pre>
 
 > build every api by define location, output to JSON format.
-```nginx
+<pre>
     location ~ '/api/lookup/([a-z0-9_]+)' {
         set_quote_sql_str $type $1;
         drizzle_query 'select * from `lookup` where `type`=$type';
@@ -45,6 +45,7 @@ tags : [openresty, mysql, ngx_drizzle, openshift]
         drizzle_pass backend;
         rds_json on;
     }
-```
+</pre>
+
 > add the "Access-Control-Allow-*" header to support crosse domain ajax call.
 > need XMLHttpRequest level 2, in IE 8 there's XDomainRequest object to support.
