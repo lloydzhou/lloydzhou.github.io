@@ -14,7 +14,7 @@ tags : [openresty, mysql, ngx_drizzle, openshift]
 > just make a nginx config file.
 > in this config file, will using some env var. so using sed to replace it before deploy the app.
 
-<code>
+```bash
     sed -e "s,`echo '$OPENSHIFT_REPO_DIR'`,`echo $OPENSHIFT_REPO_DIR`," \
         -e "s,`echo '$OPENSHIFT_DIY_IP'`,`echo $OPENSHIFT_DIY_IP`," \
         -e "s,`echo '$OPENSHIFT_DIY_PORT'`,`echo $OPENSHIFT_DIY_PORT`," \
@@ -29,10 +29,10 @@ tags : [openresty, mysql, ngx_drizzle, openshift]
         -e "s,`echo '$OPENSHIFT_MEMCACHED_HOST'`,`echo $OPENSHIFT_MEMCACHED_HOST`," \
         $OPENSHIFT_REPO_DIR/.openshift/action_hooks/nginx.conf.template \
         > $OPENSHIFT_DATA_DIR/nginx/conf/nginx.conf
-</code>
+```
 
 > build every api by define location, output to JSON format.
-
+```nginx
     location ~ '/api/lookup/([a-z0-9_]+)' {
         set_quote_sql_str $type $1;
         drizzle_query 'select * from `lookup` where `type`=$type';
@@ -45,6 +45,6 @@ tags : [openresty, mysql, ngx_drizzle, openshift]
         drizzle_pass backend;
         rds_json on;
     }
-
+```
 > add the "Access-Control-Allow-*" header to support crosse domain ajax call.
 > need XMLHttpRequest level 2, in IE 8 there's XDomainRequest object to support.
