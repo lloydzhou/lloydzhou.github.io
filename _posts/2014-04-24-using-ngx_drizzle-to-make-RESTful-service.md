@@ -14,6 +14,7 @@ tags : [openresty, mysql, ngx_drizzle, openshift]
 > just make a nginx config file.
 > in this config file, will using some env var. so using sed to replace it before deploy the app.
 
+<code>
     sed -e "s,`echo '$OPENSHIFT_REPO_DIR'`,`echo $OPENSHIFT_REPO_DIR`," \
         -e "s,`echo '$OPENSHIFT_DIY_IP'`,`echo $OPENSHIFT_DIY_IP`," \
         -e "s,`echo '$OPENSHIFT_DIY_PORT'`,`echo $OPENSHIFT_DIY_PORT`," \
@@ -28,6 +29,7 @@ tags : [openresty, mysql, ngx_drizzle, openshift]
         -e "s,`echo '$OPENSHIFT_MEMCACHED_HOST'`,`echo $OPENSHIFT_MEMCACHED_HOST`," \
         $OPENSHIFT_REPO_DIR/.openshift/action_hooks/nginx.conf.template \
         > $OPENSHIFT_DATA_DIR/nginx/conf/nginx.conf
+</code>
 
 > build every api by define location, output to JSON format.
 
