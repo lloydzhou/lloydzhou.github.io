@@ -27,11 +27,11 @@ tags : [rds_csv, mysql]
         rds_csv_content_type 'image/jpeg';
     }
 
-** do not display the field name
+** do not display the field name  
     rds_csv_field_name_header off;
     
-** do not escape the field
+** do not escape the field  
     rds_csv_quote_string off;
     
-** change the content type
+** change the content type  
     rds_csv_content_type 'image/jpeg';
