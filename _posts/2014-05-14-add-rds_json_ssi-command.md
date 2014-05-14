@@ -51,6 +51,7 @@ https://code.google.com/p/yii/source/browse/trunk/demos/blog/protected/data/sche
 		drizzle_pass mysql;
 		rds_json on;
 	}
+	
 #### output of post detail
 > the comments is a list, but one post only belong to one author. so can not only using join to output this resultset.
 
