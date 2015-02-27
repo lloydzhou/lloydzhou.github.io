@@ -11,6 +11,12 @@ This is my own personal page on the github.com.
 
 ## Projects 
 
+### [ease](https://github.com/lloydzhou/ease.git)  
+
+> A easeing function component.
+> Include 30 ease functions.
+> can see the description on site: [easings.net](http://easings.net/) or see it in the test file.
+
 ### [mapped.io](https://github.com/lloydzhou/mapred.io.git )  
 
 > A mapreduce framework based on socket.io write in node's. 
