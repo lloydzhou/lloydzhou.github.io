@@ -11,6 +11,11 @@ This is my own personal page on the github.com.
 
 ## Projects 
 
+### [luajit-mongo](https://github.com/lloydzhou/luajit-mongo.git)  
+
+> wraper mongo driver by using ffi.
+> using one bson library [lua-cbson](https://github.com/lloydzhou/lua-cbson.git), based on [libbson](https://github.com/mongodb/libbson.git)
+
 ### [ease](https://github.com/lloydzhou/ease.git)  
 
 > A easeing function component.
