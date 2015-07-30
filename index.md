@@ -11,6 +11,16 @@ This is my own personal page on the github.com.
 
 ## Projects 
 
+### [lua-resty-cache](https://github.com/lloydzhou/lua-resty-cache.git)  
+
+> http cache, can server stale response, and using "lua-resty-lock" only allow one request to populate a new cache.
+> work with [srcache-nginx-module](https://github.com/openresty/srcache-nginx-module).
+
+### [StaleRedisCache](https://github.com/lloydzhou/StaleRedisCache.git)  
+
+> python redis cache library, can using stale data, and create new cache async.
+> using tornado.ioloop to create async task.
+
 ### [luajit-mongo](https://github.com/lloydzhou/luajit-mongo.git)  
 
 > wraper mongo driver by using ffi.
