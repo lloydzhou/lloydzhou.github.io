@@ -30,7 +30,6 @@ include the components and set the db connection(using pdo_sqlite).
 
 define install url to create table and init default user.
 
-```php
     map('GET', '/install', function(){
         ActiveRecord::execute("CREATE TABLE IF NOT EXISTS user (id INTEGER PRIMARY KEY, name TEXT, email TEXT, password TEXT);");
         ActiveRecord::execute("CREATE TABLE IF NOT EXISTS post (id INTEGER PRIMARY KEY, user_id INTEGER, title TEXT,content TEXT, time INTEGER);");
@@ -43,7 +42,6 @@ define install url to create table and init default user.
         $user->insert();
         redirect('/posts');
     });
-```
 
 ### Step3
 
