@@ -168,6 +168,81 @@ define urls to manage the post.
 
 ### Step5
 
+define list page template, can display tag list, and post list
+
+    <div>
+    <div tal:condition="isset($tags)">
+      <h1>Tags</h1>
+      <hr />
+      <ul tal:condition="isset($tags)">
+        <li tal:repeat="$tags as $key => $tag" >
+          <h2 tal:content="$tag->name"></h2>
+          <span tal:content="$tag->count"></span>
+          <a tal:href="'/tag/'. $tag->id. '/post'">List Post</a>
+        </li>
+      </ul>
+    </div>
+    <div tal:condition="isset($posts)">
+      <h1>Posts</h1>
+      <hr />
+      <ul tal:condition="isset($posts)">
+        <li tal:repeat="$posts as $key => $post" >
+          <h2 tal:content="$post->title"></h2>
+          <span tal:content="date('Y-m-d H:i:s', $post->time)"></span>
+          <pre tal:content="$post->content"></pre>
+          <span tal:content="'Post by: '. $post->author->name"></span>
+          <a tal:href="'/post/'. $post->id. '/edit'">Edit Post</a>
+          <a tal:href="'/post/'. $post->id">View Post</a>
+          <a tal:href="'/post/'. $post->id. '/delete'">Delete Post</a>
+        </li>
+      </ul>
+    </div>
+    <hr />
+    <a href="/posts/">Posts</a>
+    <a href="/tags">Tags</a>
+    <a href="/post/create">Create Post</a>
+    </div>
+
+define create and view post page.
+
+    <div>
+    <div tal:condition="isset($user)">
+    <h1 tal:content="isset($post) ? 'Edit Post' : 'Create Post'">Create Post</h1>
+    <hr />
+    <form method="POST">
+      <input type="hidden" name="user_id" tal:value="$user->id" />
+      <label for="title">Title</label>
+      <input type="text" name="title" tal:value="$post->title" />
+      <br />
+      <label for="content">Content</label>
+      <textarea name="content" tal:content="$post->content"></textarea>
+      <br />
+      <label for="tag">Tags</label>
+      <input type="text" name="tag" tal:value="isset($post)?implode(', ', $post->getTags()):''" />
+      <input type="submit" name="submit" value="submit" />
+    </form>
+    </div>
+    <div tal:condition="!isset($user)">
+      <h1 tal:content="$post->title">View Post</h1>
+      <hr />
+      <pre tal:content="'Post by: '. $post->content"></pre>
+      <span tal:content="$post->author->name"></span>
+      <a tal:href="'/post/'. $post->id. '/edit'">Edit</a>
+      <a tal:href="'/post/'. $post->id. '/delete'">Delete</a>
+      <br />
+      <b>Tags:</b>
+      <span tal:repeat="$post->tags as $i=>$tag">
+        <a tal:href="'/tag/'. $tag->tag->id. '/post'" tal:content="$tag->tag->name"></a>
+      </span>
+    </div>
+    <hr />
+    <a href="/posts">Home</a>
+    <a href="/tags">Tags</a>
+    </div>
+
+
+### Step6
+
 enter point.
 
     dispatch();
