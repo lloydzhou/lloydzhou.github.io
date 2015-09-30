@@ -16,6 +16,7 @@ This is my own personal page on the github.com.
 > A barebones router for PHP.
 > It matches urls and executes PHP functions.
 > automatic get variable based on handler function parameter list.
+> There is one [Blog](https://github.com/lloydzhou/blog) demo, work with [ActiveRecord](https://github.com/lloydzhou/activerecord) and [MicroTpl](https://github.com/lloydzhou/microtpl).
 
 ### [lua-resty-cache](https://github.com/lloydzhou/lua-resty-cache.git)  
 
