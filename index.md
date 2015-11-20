@@ -51,7 +51,7 @@ This is my own personal page on the github.com.
 
 > Small template attribute language implemention for PHP (using xml_parse)
 
-### [ActiveRecord](http://lloydzhou.github.io/activerecord/)  
+### [ActiveRecord](https://github.com/bephp/activerecord)  
 
 > Simple activerecord in PHP.  
 > Easy to using(can using chain calls).  
