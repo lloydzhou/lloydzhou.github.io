@@ -1,0 +1,109 @@
+{
+  "basics": {
+    "name": "周林",
+    "label": "软件工程师",
+    "picture": "//avatars3.githubusercontent.com/u/1826685?v=3&s=460",
+    "email": "lloydzhou@qq.com",
+    "phone": "",
+    "website": "https://lloydzhou.github.io",
+    "summary": "一个喜欢写代码，喜欢尝试新技术的人",
+    "location": {
+      "address": "武汉光谷",
+      "postalCode": "430070",
+      "city": "武汉",
+      "countryCode": "CN",
+      "region": "湖北"
+    },
+    "profiles": [{
+      "network": "Github",
+      "username": "lloydzhou",
+      "url": "https://github.com/lloydzhou"
+    }]
+  },
+  "work": [{
+    "company": "光点图灵网络科技有限公司",
+    "position": "武汉",
+    "website": "http://www.adesk.com",
+    "startDate": "2013-12-23",
+    "endDate": "",
+    "summary": "负责安卓壁纸4.0改版工作<br />负责安卓动态壁纸维护工作<br />负责蛋蛋奇货的开发工作",
+    "highlights": [
+      "Python", "openresty", "PHP"
+    ]
+  },{
+    "company": "武汉网上网科技",
+    "position": "武汉",
+    "website": "http://www.newbiiz.com/",
+    "startDate": "2013-06-01",
+    "endDate": "2013-12-20",
+    "summary": "公司几个网站的日常维护工作",
+    "highlights": [
+      "PHP", "Yii"
+    ]
+  },{
+    "company": "阿托普软件",
+    "position": "武汉",
+    "website": "http://www.atop-online.com/",
+    "startDate": "2012-07-01",
+    "endDate": "2013-02-01",
+    "summary": "参与公司的几个外包项目",
+    "highlights": [
+      "PHP", "typo3", "外包", "facebook APP"
+    ]
+  }],
+  "volunteer": [{
+    "organization": "bephp",
+    "position": "Online",
+    "website": "https://github.com/bephp",
+    "startDate": "2015-03-01",
+    "endDate": "",
+    "summary": "开源的几个web开发的轻量库，使用composer发布<br>  一个100多行的路由，采用树形结构存储路由表，保证查询时间稳定，利用反射机制自动传递参数。<br> 一个400行的Activerecord，将SQL抽象成表达式，避免了代码中频繁的拼接SQL，使用PDO绑定参数，支持关联关系进行查询。",
+    "highlights": [
+      "Rouer", "Activerecord"
+    ]
+  }],
+  "education": [{
+    "institution": "华中农业大学",
+    "area": "信息与计算科学",
+    "studyType": "本科",
+    "startDate": "2007-09-01",
+    "endDate": "2011-06-25",
+    "gpa": "",
+    "courses": [
+      ""
+    ]
+  }],
+  "awards": [{
+    "title": "数学建模",
+    "date": "",
+    "awarder": "全国数学建模组委会",
+    "summary": "连续三次获得全国研究生数学建模竞赛二等奖"
+  }],
+  "skills": [{
+    "name": "软件开发工程师",
+    "level": "高级",
+    "keywords": [
+      "openresty",
+      "Python",
+      "PHP",
+      "redis",
+      "mongoDB",
+      "MySql",
+      "HTML",
+      "CSS",
+      "Javascript"
+    ]
+  }],
+  "interests": [{
+    "name": "运动",
+    "keywords": [
+      "篮球", "羽毛球"
+    ]
+  },{
+    "name": "书法",
+    "keywords": [
+      "毛笔"
+    ]
+  }]
+}
+
